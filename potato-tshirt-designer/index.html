@@ -1,0 +1,282 @@
+<!-- CSS SECTION-->
+
+<link href="css/jquery.minicolors.css" rel="stylesheet" />
+<link href="css/bootstrap-tagsinput.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/font-awesome.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/jquery.minicolors.css" rel="stylesheet" />
+<link href="css/jquery.scrollbar.css" rel="stylesheet" />
+<link href="css/ladda.min.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<link href="css/custom.css" rel="stylesheet" />
+
+
+<!-- JS SECTION-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE]><script type="text/javascript" src="Scripts/excanvas.js"></script><![endif]-->
+<script src="js/jquery-3.0.0.js"></script>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic'>
+<script src="js/bootstrap.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
+<script src="js/jquery.minicolors.js"></script>
+<script src="js/bootstrap-tagsinput.js"></script>
+<form enctype="multipart/form-data" id="DesignYourselfForm">
+
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="title">Design Potato T-Shirt !</h1>
+    </div>
+  </header>
+  <div class="container">
+    <section id="typography">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-block mb30 frame-shadow-raised border-radius">
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <label for="CategoryList" class="text-danger"> Category </label>
+                <select id="CategoryList" name="CategoryList" class="form-control mb20">
+                  <option value="0">Choose Category</option>
+                  <option value="1">Category1</option>
+                  <option value="2">Category2</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="Name" class="text-danger">Product Name</label>
+                <input id="Name" name="Name" class="form-control mb20" placeholder="Example: Crazy Tshirt" />
+              </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+              <div class="col-md-8">
+                <label for="ProductTypeList">Product Type</label>
+                <select id="ProductTypeList" name="ProductTypeList" class="form-control mb20">
+                      <option value="1" data-front="crew_front.png" data-materialprice="28,0000" data-back="crew_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        T-shirt
+                      </option>
+                      <option value="2" data-front="mens_longsleeve_front.png" data-materialprice="30,0000" data-back="mens_longsleeve_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        Sweatshirt
+                      </option>
+                      <option value="3" data-front="mens_hoodie_front.png" data-materialprice="40,0000" data-back="mens_hoodie_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        Hoodie
+                      </option>
+                      <option value="4" data-front="mens_tank_front.png" data-materialprice="25,0000" data-back="mens_tank_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        Short T-shirt
+                      </option>
+                      <option value="5" data-front="womens_crew_front.png" data-materialprice="28,0000" data-back="womens_crew_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        Woman  T-shirt
+                      </option>
+                      <option value="6" data-front="mans_vneckshirt_front.png" data-materialprice="26,0000" data-back="mans_vneckshirt_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        V Neck Man T-shirt
+                      </option>
+                      <option value="7" data-front="mans_vneckshirt_front.png" data-materialprice="26,0000" data-back="mans_vneckshirt_back.png" data-addingtextprice="7,0000" data-addingimageprice="7,0000">
+                        V Neck Man T-shirt
+                      </option>
+
+                </select>
+                <!-- <select id="ProductTypeList" name="ProductTypeList" class="form-control mb20">
+
+
+                  <option value="1" data-front="nameFront1" data-materialprice="50" data-back="nameBack1"
+                          data-addingtextprice="5" data-addingimageprice="10">
+                    ProdutType1
+                  </option>
+                  <option value="2" data-front="nameFront2" data-materialprice="50" data-back="nameBack2"
+                          data-addingtextprice="5" data-addingimageprice="20">
+                    ProdutType2
+                  </option>
+
+                </select> -->
+              </div>
+              <div class="col-md-4">
+                <label for="SizeList">Size</label>
+                <select id="SizeList" name="SizeList" class="form-control mb20">
+                  <option value="M" selected>Medium</option>
+                  <option value="L">Large</option>
+
+                </select>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="ColorPalette">Renk</label>
+                  <ul class="nav" id="ColorPalette">
+                    <li class="colorPreview" title="Beyaz" style="background-color:#ffffff;"></li>
+                    <li class="colorPreview" title="Buz Mavi" style="background-color:#a5def8;"></li>
+                    <li class="colorPreview" title="Füme" style="background-color:#3f3d45;"></li>
+                    <li class="colorPreview" title="Gri" style="background-color:#8f8d8f;"></li>
+                    <li class="colorPreview" title="Haki Yeşili" style="background-color:#353c2c;"></li>
+                    <li class="colorPreview" title="Kırmızı" style="background-color:#852329;"></li>
+                    <li class="colorPreview" title="Krem" style="background-color:#fff3ca;"></li>
+                    <li class="colorPreview" title="Lacivert" style="background-color:#131b42;"></li>
+                    <li class="colorPreview" title="Turuncu" style="background-color:#ea580b;"></li>
+                    <li class="colorPreview" title="Sarı" style="background-color:#fcdc44;"></li>
+                    <li class="colorPreview" title="Siyah" style="background-color:#222222;"></li>
+                    <li class="colorPreview" title="Toz Pembe" style="background-color:#f6b7c2;"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="CustomText">Text</label>
+                <div class="input-group form-group">
+                  <textarea id="CustomText" type="text" class="form-control" placeholder="Text here..."></textarea>
+
+                  <span class="input-group-btn">
+                    <button id="AddText" class="btn btn-primary h40" type="button" title="Add Text"><i class="fa fa-arrow-right"></i></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">I will upload myself</label>
+                  <input id="PhotoUpload" name="PhotoUpload" type="file" class="file">
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <label>Ready to use designs</label>
+            <div id="StockImageContainer" class="mb20">
+              <div class="clear-all"></div>
+              <img style="cursor:pointer;" class="img-polaroid avatar" src="img/StockImages/ak47 lvl3 helmet police vest.png" data-width="831" data-height="611" alt="ak47 lvl3 helmet police vest">
+              <img style="cursor:pointer;" class="img-polaroid avatar" src="img/StockImages/angry bull.png" data-width="512" data-height="512" alt="angry bull">
+              <img style="cursor:pointer;" class="img-polaroid avatar" src="img/StockImages/pubg icon black.png"
+                data-width="4000" data-height="2326" alt="pubg icon black">
+              <div class="clearfix"></div>
+            </div>
+
+            <div id="TagContainer" class="form-group">
+              <label for="Tags" class="text-danger">Add Tag</label>
+              <input id="Tags" name="Tags" type="text" class="form-control" value="" placeholder="Write and Enter" data-role="tagsinput" />
+              <input type="text" style="height:1px;color:white;font-size:0px;" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div style="min-height: 32px;">
+            <div class="clearfix editButtonGroup btn-group minw100">
+              <button id="Flip" type="button" class="icon rounded border icon-40" title="Arka"><i class="fa fa-retweet"></i></button>
+              <button id="FontFamily" class="icon rounded border icon-40 dropdown-toggle txEditor" data-toggle="dropdown" title="Font Stili" type="button"><i class="fa fa-font"></i></button>
+              <ul class="dropdown-menu fontSelection" role="menu" aria-labelledby="font-family-X">
+                <li><a tabindex="-1" class="Arial">Arial</a></li>
+                <li><a tabindex="-1" class="Helvetica">Helvetica</a></li>
+                <li><a tabindex="-1" class="MyriadPro">Myriad Pro</a></li>
+                <li><a tabindex="-1" class="Delicious">Delicious</a></li>
+                <li><a tabindex="-1" class="Verdana">Verdana</a></li>
+                <li><a tabindex="-1" class="Georgia">Georgia</a></li>
+                <li><a tabindex="-1" class="Courier">Courier</a></li>
+                <li><a tabindex="-1" class="ComicSansMS">Comic Sans MS</a></li>
+                <li><a tabindex="-1" class="Impact">Impact</a></li>
+                <li><a tabindex="-1" class="Monaco">Monaco</a></li>
+                <li><a tabindex="-1" class="Optima">Optima</a></li>
+                <li><a tabindex="-1" class="Hoefler Text">Hoefler Text</a></li>
+                <li><a tabindex="-1" class="Plaster">Plaster</a></li>
+                <li><a tabindex="-1" class="Engagement">Engagement</a></li>
+              </ul>
+              <button id="TextBold" class="icon rounded border icon-40 txEditor" data-original-title="Kalın" type="button"><i class="fa fa-bold"></i></button>
+              <button id="TextItalic" class="icon rounded border icon-40 txEditor" data-original-title="İtalik" type="button"><i class="fa fa-italic"></i></button>
+              <button id="TextStrike" class="icon rounded border icon-40 txEditor" title="Üstünü çiz" style="" type="button"><i class="fa fa-strikethrough"></i></button>
+              <button id="TextUnderline" class="icon rounded border icon-40 txEditor" title="Altını çiz" style="" type="button"><i class="fa fa-underline"></i></button>
+              <div class="icon rounded border icon-40 txEditor" rel="tooltip" data-placement="top" data-original-title="Font Rengi" title="Font Rengi">
+                <input type="hidden" id="TextFontColor" class="color-picker" size="7" value="#aabbcc" />
+              </div>
+              <div class="icon rounded border icon-40 txEditor" rel="tooltip" data-placement="top" data-original-title="Text stroke color" title="Text stroke color"><input type="hidden" id="TextStrokecolor" class="color-picker" size="7" value="#000000"></div>
+              <button class="icon rounded border icon-40 imgEditor" id="BringToFront" title="Send to front" type="button"><i class="fa fa-level-up"></i></button>
+              <button class="icon rounded border icon-40 imgEditor" id="SendToBack" title="Send to behind" type="button"><i class="fa fa-level-down"></i></button>
+              <button id="RemoveSelected" class="icon rounded border icon-40 imgEditor" title="delete selected" type="button"><i class="fa fa-times"></i></button>
+              <button id="ClearDesign" class="icon rounded border icon-40 pull-right" title="Clear all design" type="button"><i class="fa fa-trash-o"></i></button>
+            </div>
+          </div>
+
+
+          <div id="shirtDiv" class="page" style="width: 530px; height: 630px; position: relative; background-color: rgb(255, 255, 255);">
+            <img id="TshirtFacing" src="img/ProductType/crew_front.png" data-currentface="1" alt="Tshirt Front Design" />
+            <div id="DrawingArea" style="position: absolute;top: 100px;left: 160px;z-index: 10;width: 200px;height: 400px;">
+              <canvas id="tcanvas" width=200 height="400" class="hover" style="-webkit-user-select: none;"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="content-block mb30 frame-shadow-raised border-radius">
+            <div class="form-group">
+              <label for="DescriptionText">I want to add note</label>
+              <textarea id="DescriptionText" class="form-control"></textarea>
+            </div>
+            <h4 class="title">Pricing</h4>
+            <table id="Calculation" class="table ">
+              <tr>
+                <td align="left"><span id="ProductTypeText" name="ProductTypeText"></span></td>
+                <td align="right"><span id="MaterialPrice" name="MaterialPrice"></span></td>
+              </tr>
+              <tr>
+                <td align="left">Front Design</td>
+                <td align="right"><span id="FrontDesignPrice" name="FrontDesignPrice">0 $</span></td>
+              </tr>
+              <tr>
+                <td align="left">Back Design</td>
+                <td align="right"><span id="BackDesignPrice" name="BackDesignPrice">0 $</span></td>
+              </tr>
+              <tr>
+                <td align="left"><strong>Total</strong></td>
+                <td align="right"><strong><span id="TotalPrice" name="TotalPrice"></span></strong></td>
+              </tr>
+            </table>
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="form-group" style="margin-top:10px">
+                  <label for="Quantity">Count</label>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <input id="Quantity" name="Quantity" type="number" class="form-control" value="1" min="1" max="1000" />
+              </div>
+            </div>
+            <button type="button" class="btn btn-large btn-block btn-success" name="AddToCart" id="AddToCart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <input type="hidden" id="ProductType" name="ProductType" style="width:100%;" /><br />
+  <input type="hidden" id="Size" name="Size" style="width:100%;" /><br />
+  <input type="hidden" id="DesignFront" name="DesignFront" style="width:100%;" /><br />
+  <input type="hidden" id="DesignBack" name="DesignBack" style="width:100%;" /><br />
+  <input type="hidden" id="Color" name="Color" value="rgb(255, 255, 255)" style="width:100%;" /><br />
+  <input type="hidden" id="SelectedImagePathListJson" name="SelectedImagePathListJson" value="" style="width:100%;" /><br />
+  <input type="hidden" id="Description" name="Description" value="" style="width:100%;" /><br />
+  <input type="hidden" id="DataUrlFront" name="DataUrlFront" value="" style="width:100%;" /><br />
+  <input type="hidden" id="DataUrlBack" name="DataUrlBack" value="" style="width:100%;" /><br />
+
+  <input type="hidden" id="CategoryId" name="CategoryId" value="0" style="width:100%;" /><br />
+
+</form>
+<script src="index.js"></script>
